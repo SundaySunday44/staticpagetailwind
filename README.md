@@ -1,0 +1,2 @@
+# staticpagetailwind
+Pagina Estática Tailwind
