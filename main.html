@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        afacad: ['Afacad Flux', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-gray-400">
+
+    <!-- Header -->
+    <!--
+    <div class="flex items-center space-x-4 font-afacad p-3 bg-white shadow bg-gradient-to-b from-slate-50 to-gray-200">
+        <div class="w-1/3 flex items-center max-w-sm">
+            <i class=" flex-shrink-0 w-15 ml-4 fa-solid fa-dog fa-4x"></i>
+            <h1 class="font-bold text-4xl ml-4 ">Veterinaria</h1>
+        </div>
+        <div class="w-2/3 flex space-x-4">
+            <p class="flex-grow text-2xl">Inicio</p>
+            <p class="flex-grow text-2xl">Quienes Somos</p>
+            <p class="flex-grow text-2xl">Blog</p>
+            <p class="flex-grow text-2xl">Perros</p>
+            <p class="flex-grow text-2xl">Gatos</p>
+            <p class="flex-grow text-2xl">Ganado</p>
+        </div>
+    </div>
+     -->
+
+    <nav class="font-sans flex flex-col text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-white shadow sm:items-baseline w-full">
+        <div class="mb-2 sm:mb-0 inner">
+
+            <a href="/home" class="text-2xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold">LogoText</a><br>
+            <span class="text-xs text-grey-dark">Beautiful New Tagline</span>
+
+        </div>
+
+        <div class="sm:mb-0 self-center">
+            <!-- <div class="h-10" style="display: table-cell, vertical-align: middle;"> -->
+            <a href="#" class="text-md no-underline text-black hover:text-blue-dark ml-2 px-1">Link1</a>
+            <a href="#" class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1">Link2</a>
+            <!-- <a href="/two" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">About Us</a> -->
+            <a href="#" class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1">Link3</a>
+            <!-- </div> -->
+
+        </div>
+    </nav>
+
+    <!-- father-container -->
+    <div class="flex">
+        <!-- body-container -->
+        <section class="w-2/3 items-center">
+            <!-- image-info-container -->
+            <div class="flex flex-grow flex-col m-2 items-center rounded-lg bg-gray-300">
+                <!--<img src="assets\covid-2.png" alt="Descripción de la imagen" class="border-2 border-gray-500 rounded-lg shadow-lg w-full object-cover">-->
+                <!-- Carrusel de imagenes -->
+                <div class="max-w-2xl mx-auto">
+
+                    <div id="default-carousel" class="relative" data-carousel="static">
+                        <!-- Carousel wrapper -->
+                        <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                            <!-- Item 1 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                                <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                            </div>
+                        </div>
+                        <!-- Slider indicators -->
+                        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                        </div>
+                        <!-- Slider controls -->
+                        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                                <span class="hidden">Previous</span>
+                            </span>
+                        </button>
+                        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                <span class="hidden">Next</span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <p class="mt-5">This carousel slider component is part of a larger, open-source library of Tailwind CSS components. Learn more by going to the official <a class="text-blue-600 hover:underline" href="https://flowbite.com/docs/getting-started/introduction/"
+                            target="_blank">Flowbite Documentation</a>.
+                    </p>
+                    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+                </div>
+            </div>
+        </section>
+        <!-- aside-container -->
+        <aside class="m-2 w-1/3 items-center rounded-lg bg-gray-300">
+            <!-- product-info-container -->
+            <div class="flex flex-col items-center text-center h-full justify-center">
+                <p class="mt-4 font-afacad font-bold text-3xl">Satisfacción Garantizada</p>
+                <p class="">Nuestro equipo está comprometido con dejar tus espacios relucientes. ¡Tu satisfacción es nuestra prioridad!</p>
+                <img src="assets\aside-1.jpg" alt="Descripción de la imagen" class="border-2 border-gray-500 rounded-lg shadow-lg w-72 h-auto my-4">
+                <button class="mt-2 p-2 rounded-full text-white font-bold bg-gray-600 hover:bg-gray-900 my-4">Ver productos</button>
+            </div>
+        </aside>
+    </div>
+    <!-- products-container -->
+    <div>
+
+    </div>
+
+    <div>
+        <p class="mt-4 mb-6 font-afacad font-bold text-5xl text-center">Nuestros mejores productos</p>
+        <div class="flex flex-row justify-center">
+            <!-- best-products- -->
+            <div class="flex flex-row m-2 w-96 rounded-lg justify-center border-2 bg-gray-300 hover:bg-white shadow-lg transition-shadow duration-300">
+                <img src="assets\producto_1.webp" alt="">
+                <div class="flex-col">
+                    <p class="font-bold mt-4">Expert Toallitas Desinfectantes</p>
+                    <p class="italic font-light">Clorox®</p>
+                    <p class="mt-2 mr-4">Desinfección profesional en un solo paso, dentro y fuera de tu hogar.</p>
+                    <p class="italic font-light mt-8">* SARS-CoV-2, virus causante de COVID-19</p>
+                </div>
+            </div>
+            <!-- best-products-2 -->
+            <div class="flex flex-row m-2 w-96 rounded-lg justify-center border-2 bg-gray-300 hover:bg-white shadow-lg transition-shadow duration-300">
+                <img src="assets\producto_1.webp" alt="">
+                <div class="flex-col">
+                    <p class="font-bold mt-4">Expert Toallitas Desinfectantes</p>
+                    <p class="italic font-light">Clorox®</p>
+                    <p class="mt-2 mr-4">Desinfección profesional en un solo paso, dentro y fuera de tu hogar.</p>
+                    <p class="italic font-light mt-8">* SARS-CoV-2, virus causante de COVID-19</p>
+                </div>
+            </div>
+            <!-- best-products-3 -->
+            <div class="flex flex-row m-2 w-96 rounded-lg justify-center border-2 bg-gray-300 hover:bg-white shadow-lg transition-shadow duration-300">
+                <img src="assets\producto_1.webp" alt="">
+                <div class="flex-col">
+                    <p class="font-bold mt-4">Expert Toallitas Desinfectantes</p>
+                    <p class="italic font-light">Clorox®</p>
+                    <p class="mt-2 mr-4">Desinfección profesional en un solo paso, dentro y fuera de tu hogar.</p>
+                    <p class="italic font-light mt-8">* SARS-CoV-2, virus causante de COVID-19</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- footer-container -->
+    <footer class="relative bg-blueGray-200 pt-8 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+                    <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+                        Find us on any of these platforms, we respond 1-2 business days.
+                    </h5>
+                    <div class="mt-6 lg:mb-0 mb-6">
+                        <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-github"></i>
+              </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free Products</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full lg:w-4/12 px-4">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT License</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-blueGray-500 font-semibold py-1">
+                        Copyright © <span id="get-current-year">2021</span><a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank"> Notus JS by
+              <a href="https://www.creative-tim.com?ref=njs-profile" class="text-blueGray-500 hover:text-blueGray-800">Creative Tim</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

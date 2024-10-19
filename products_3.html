@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="font-sans flex flex-col text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-white shadow sm:items-baseline w-full">
+        <div class="mb-2 sm:mb-0 inner">
+            <a href="/home" class="text-2xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold">LimpiaPlus</a><br>
+            <span class="text-xs text-grey-dark">Productos de limpieza</span>
+
+        </div>
+
+        <div class="sm:mb-0 self-center">
+            <!-- <div class="h-10" style="display: table-cell, vertical-align: middle;"> -->
+            <a href="index.html" class="text-md no-underline text-black hover:text-blue-dark ml-2 px-1">Inicio</a>
+            <a href="quienes-somos.html" class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1">Quienes Somos</a>
+            <!-- <a href="/two" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">About Us</a> -->
+            <a href="products.html" class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1">Productos</a>
+            <a href="blog.html" class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1">Blog</a>
+            <a href="contacto.html" class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1">Contactanos</a>
+            <!-- </div> -->
+
+        </div>
+    </nav>
+
+    <!-- products -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-8 mx-auto">
+            <div class="lg:flex lg:-mx-2">
+                <div class="space-y-3 lg:w-1/5 lg:px-2 lg:space-y-4">
+                    <a href="products.html" class="block font-medium text-blue-600 dark:text-gray-500 hover:underline">Desifectantes y Limpiadores</a>
+                    <a href="products_2.html" class="block font-medium text-gray-500 dark:text-gray-500 hover:underline">Limpieza Industrial</a>
+                    <a href="products_3.html" class="block font-medium text-gray-500 dark:text-blue-300 hover:underline">Cuidado Personal</a>
+                </div>
+
+                <div class="mt-6 lg:mt-0 lg:px-2 lg:w-4/5 ">
+                    <div class="flex items-center justify-between text-sm tracking-widest uppercase ">
+                        <p class="text-gray-500 dark:text-gray-300">4 Items</p>
+                        <div class="flex items-center">
+                            <p class="text-gray-500 dark:text-gray-300">FILTRO:</p>
+                            <select class="font-medium text-gray-700 bg-transparent dark:text-gray-500 focus:outline-none">
+                                <option value="#">Recomendados</option>
+                                <option value="#">Marca</option>
+                                <option value="#">Precio</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                        <div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto">
+                            <img class="object-cover w-full rounded-md h-72 xl:h-80" src="assets/producto3_1.webp" alt="T-Shirt">
+                            <h4 class="mt-2 text-lg font-medium text-gray-700 dark:text-gray-200">TACHO METÁLICO 3 PUESTOS
+                            </h4>
+                            <p class="text-blue-500">$112.00</p>
+
+                            <button class="flex items-center justify-center w-full px-2 py-2 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                <span class="mx-1">Añadir al carrito</span>
+                            </button>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto">
+                            <img class="object-cover w-full rounded-md h-72 xl:h-80" src="assets/producto3_2.webp" alt="T-Shirt">
+                            <h4 class="mt-2 text-lg font-medium text-gray-700 dark:text-gray-200">PAÑO PARA LIMPIEZA MICROLIMPIA</h4>
+                            <p class="text-blue-500">$2.35</p>
+                            <button class="flex items-center justify-center w-full px-2 py-2 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                <span class="mx-1">Añadir al carrito</span>
+                            </button>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto">
+                            <img class="object-cover w-full rounded-md h-72 xl:h-80" src="assets/producto3_3.webp" alt="T-Shirt">
+                            <h4 class="mt-2 text-lg font-medium text-gray-700 dark:text-gray-200">RECOGEDOR DE BASURA METÁLICO
+                            </h4>
+                            <p class="text-blue-500">$8.00</p>
+
+                            <button class="flex items-center justify-center w-full px-2 py-2 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                <span class="mx-1">Añadir al carrito</span>
+                            </button>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto">
+                            <img class="object-cover w-full rounded-md h-72 xl:h-80" src="assets/producto3_4.webp" alt="T-Shirt">
+                            <h4 class="mt-2 text-lg font-medium text-gray-700 dark:text-gray-200">DISPENSADOR MANUAL DE JABÓN</h4>
+                            <p class="text-blue-500">$19.00</p>
+
+                            <button class="flex items-center justify-center w-full px-2 py-2 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                <span class="mx-1">Añadir al carrito</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative bg-blueGray-200 pt-8 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h4 class="text-3xl fonat-semibold text-blueGray-700">Puede contactarnos</h4>
+                    <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+                        Podremos resolver sus dudas y consultas.
+                    </h5>
+                    <div class="mt-6 lg:mb-0 mb-6">
+                        <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-github"></i>
+              </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto text-center">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Links</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="main.html">Inicio</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="products.html">Productos</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="contacto.html">Contactanos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-blueGray-500 font-semibold py-1">
+                        Copyright © <span id="get-current-year">2024</span>
+                        <a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank">
+                            <a href="https://www.creative-tim.com?ref=njs-profile" class="text-blueGray-500 hover:text-blueGray-800">LimpiaPlus</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

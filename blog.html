@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="font-sans flex flex-col text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-white shadow sm:items-baseline w-full">
+        <div class="mb-2 sm:mb-0 inner">
+
+            <a href="/home" class="text-2xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold">LimpiaPlus</a><br>
+            <span class="text-xs text-grey-dark">Productos de limpieza</span>
+
+        </div>
+
+        <div class="sm:mb-0 self-center">
+            <!-- <div class="h-10" style="display: table-cell, vertical-align: middle;"> -->
+            <a href="index.html" class="text-md no-underline text-black hover:text-blue-dark ml-2 px-1">Inicio</a>
+            <a href="quienes-somos.html" class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1">Quienes Somos</a>
+            <!-- <a href="/two" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">About Us</a> -->
+            <a href="products.html" class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1">Productos</a>
+            <a href="blog.html" class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1">Blog</a>
+            <a href="contacto.html" class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1">Contactanos</a>
+            <!-- </div> -->
+
+        </div>
+    </nav>
+
+    <!-- blog -->
+    <div class="m-5 text-center">
+        <p class="text-8xl font-medium tracking-tight">
+            <a href="https://tailwindcomponents.com" class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 text-slate-900 hover:text-slate-100 before:hover:bg-slate-800 ">
+                <span class="relative skew-y-3">Blog</span>
+            </a>
+        </p>
+        <p class="m-6 text-3xl font-medium tracking-tight">Conoce nuestras últimas noticias y actualizaciones</p>
+    </div>
+
+    <!-- blog -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+            <div class="grid grid-cols-1 gap-8 mt-4 md:mt-4 md:grid-cols-2">
+                <div class="lg:flex">
+                    <img class="object-cover w-full h-56 rounded-lg lg:w-64" src="assets/blog_6.jfif" alt="">
+
+                    <div class="flex flex-col justify-between py-6 lg:mx-6">
+                        <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                            Bienvenida la Nueva Línea de Productos Ecológicos
+                        </a>
+
+                        <span class="text-sm text-gray-500 dark:text-gray-300">15 de octubre de 2024</span>
+                    </div>
+                </div>
+
+                <div class="lg:flex">
+                    <img class="object-cover w-full h-56 rounded-lg lg:w-64" src="assets/blog_2.webp" alt="">
+
+                    <div class="flex flex-col justify-between py-6 lg:mx-6">
+                        <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                            Consejos para Mantener Tu Hogar Limpio
+                        </a>
+
+                        <span class="text-sm text-gray-500 dark:text-gray-300">15 de octubre de 2024</span>
+                    </div>
+                </div>
+
+                <div class="lg:flex">
+                    <img class="object-cover w-full h-56 rounded-lg lg:w-64" src="assets/blog_5.jpg" alt="">
+                    <div class="flex flex-col justify-between py-6 lg:mx-6">
+                        <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                            La Importancia de la Limpieza Regular en Espacios de Trabajo
+                        </a>
+
+                        <span class="text-sm text-gray-500 dark:text-gray-300">15 de octubre de 2024</span>
+                    </div>
+                </div>
+
+                <div class="lg:flex">
+                    <img class="object-cover w-full h-56 rounded-lg lg:w-64" src="assets/blog_4.jpg" alt="">
+
+                    <div class="flex flex-col justify-between py-6 lg:mx-6">
+                        <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                            Ofertas Especiales por Tiempo Limitado
+                        </a>
+
+                        <span class="text-sm text-gray-500 dark:text-gray-300">15 de octubre de 2024</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative bg-blueGray-200 pt-8 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h4 class="text-3xl fonat-semibold text-blueGray-700">Puede contactarnos</h4>
+                    <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+                        Podremos resolver sus dudas y consultas.
+                    </h5>
+                    <div class="mt-6 lg:mb-0 mb-6">
+                        <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                <i class="fab fa-github"></i>
+              </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto text-center">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Links</span>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="main.html">Inicio</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="products.html">Productos</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="contacto.html">Contactanos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-blueGray-500 font-semibold py-1">
+                        Copyright © <span id="get-current-year">2024</span>
+                        <a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank">
+                            <a href="https://www.creative-tim.com?ref=njs-profile" class="text-blueGray-500 hover:text-blueGray-800">LimpiaPlus</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
